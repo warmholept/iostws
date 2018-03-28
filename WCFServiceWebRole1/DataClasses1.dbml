@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="IOST" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=tcp:iost.database.windows.net,1433;Initial Catalog=IOST;Persist Security Info=True;User ID=warmhole" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="IOSTConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Consumptions" Member="Consumptions">
+    <Type Name="Consumptions">
+      <Column Name="PK_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FK_Device" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Temperatures" Member="Temperatures">
+    <Type Name="Temperatures">
+      <Column Name="PK_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FK_Device" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="S1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="S2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="S3" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="S4" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="S5" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="S6" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
